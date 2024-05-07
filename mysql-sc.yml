@@ -5,4 +5,4 @@ metadata:
   namespace: jenkins
 provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
-reclaimPolicy: delete
+reclaimPolicy: Delete
