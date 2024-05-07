@@ -3,13 +3,15 @@ kind: Ingress
 metadata:
   name: phpmyadmin-ing
   namespace: mysql
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /ganesh
 spec:
   rules:
   - host: gvdganesh.info
     http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: "/ganesh"
         backend:
           service:
             name: phpmyadmin-svc
