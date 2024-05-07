@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: mysql-ing
+  name: phpmyadmin-ing
   namespace: mysql
 spec:
   rules:
@@ -12,6 +12,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: mysql-svc
+            name: phpmyadmin-svc
             port: 
-              number: 3306
+              number: 80
