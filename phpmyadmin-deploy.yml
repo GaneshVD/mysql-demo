@@ -9,10 +9,10 @@ spec:
   template:
     metadata:
       labels:
-        app: phpMyAdmin
+        app: phpmyadmin
     spec:
       containers:
-      - name: phpMyAdmin
+      - name: phpmyadmin
         image: phpmyadmin:5.2
         resources:
           limits:
