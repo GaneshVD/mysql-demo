@@ -10,4 +10,4 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  storageClassName: gp2
+  storageClassName: ebs-custom-sc
