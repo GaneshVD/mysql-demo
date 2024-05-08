@@ -25,11 +25,13 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
            secretKeyRef:
-             name: mysql-secret
+             name: mysql-secrets
              key: password
         - name: PMA_HOST
           valueFrom:
            secretKeyRef:
-             name: mysql-secret
+             name: mysql-secrets
              key: pma-host
+        - name: PMA_PORT
+          value: "3306"
 
